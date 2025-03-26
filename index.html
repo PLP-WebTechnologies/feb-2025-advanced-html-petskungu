@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Elements and Forms</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #333;
+            color: white;
+            margin: 30px;
+        }
        
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            
         }
         table, th, td {
             border: 1px solid #ddd;
+            
         }
         th, td {
             padding: 10px;
@@ -34,13 +45,13 @@
 
    
     <header>
-        <h1>HTML5 Elements and Forms Example</h1>
+        <h1>HTML5 Elements and Forms</h1>
     </header>
 
     
-    <section>
+    <section >
         <h2>Ordered List with Roman Numerals</h2>
-        <ol type="I" style="display: block; text-align: left;">
+        <ol type="I" style="display: block; text-align: left; color: red;">
             <li>Introduction to HTML5</li>
             <li>Semantic Elements</li>
             <li>Forms and Input Types</li>
@@ -52,7 +63,10 @@
     
     <section style="border: black; box-shadow: #333; box-sizing: border-box;">
         <h2>Beautiful Nature Image</h2>
-        <img style="max-height: 600px; max-width: 500px;" src="https://images.pexels.com/photos/31187683/pexels-photo-31187683/free-photo-of-serene-hillside-landscape-with-soft-mist.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful landscape" width="600">
+        <img style="max-height: 600px; max-width: 500px; border-radius: 6px; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);" 
+        src="https://images.pexels.com/photos/31187683/pexels-photo-31187683/free-photo-of-serene-hillside-landscape-with-soft-mist.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="Beautiful landscape" width="600">
+        
     </section>
 
    
@@ -60,7 +74,7 @@
         <h2>Contact Information</h2>
         <table>
             <thead>
-                <tr>
+                <tr style="color: blue;">
                     <th>Name</th>
                     <th>Address</th>
                     <th>Mobile</th>
@@ -68,35 +82,35 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr style="color: green;">
                     <td>John Doe</td>
-                    <td>123 Main St, Springfield</td>
-                    <td>555-1234</td>
-                    <td>johndoe@example.com</td>
+                    <td>Mombasa</td>
+                    <td>0785*****79</td>
+                    <td>john@example.com</td>
                 </tr>
-                <tr>
+                <tr style="color: yellow;">
                     <td>Jane Smith</td>
-                    <td>456 Oak St, Rivertown</td>
-                    <td>555-5678</td>
-                    <td>janesmith@example.com</td>
+                    <td>Bomet</td>
+                    <td>0756*****57</td>
+                    <td>jane@example.com</td>
                 </tr>
-                <tr>
+                <tr style="color: red;">
                     <td>Robert Brown</td>
-                    <td>789 Pine St, Lakeside</td>
-                    <td>555-9876</td>
-                    <td>robertb@example.com</td>
+                    <td>Nairobi</td>
+                    <td>0793*****87</td>
+                    <td>robert@example.com</td>
                 </tr>
-                <tr>
+                <tr style="color: orange;">
                     <td>Alice White</td>
-                    <td>101 Maple St, Mountainview</td>
-                    <td>555-2468</td>
-                    <td>alicewhite@example.com</td>
+                    <td>Nakuru</td>
+                    <td>01*****73</td>
+                    <td>alice9278@example.com</td>
                 </tr>
-                <tr>
+                <tr style="color: purple;">
                     <td>Charlie Green</td>
-                    <td>202 Birch St, Seaside</td>
-                    <td>555-1357</td>
-                    <td>charliegreen@example.com</td>
+                    <td>Nairobi</td>
+                    <td>011*****72</td>
+                    <td>charlie98@example.com</td>
                 </tr>
             </tbody>
         </table>
@@ -139,10 +153,10 @@
             <div class="form-group">
                 <label for="country">Country</label>
                 <select id="country" name="country" required>
-                    <option value="usa">USA</option>
-                    <option value="uk">UK</option>
-                    <option value="canada">Canada</option>
-                    <option value="australia">Australia</option>
+                    <option value="kenya">KENYA</option>
+                    <option value="uganda">UGANDA</option>
+                    <option value="tanzania">TANZANIA</option>
+                    <option value="ethiopia">ETHIOPIA</option>
                 </select>
             </div>
 
@@ -162,14 +176,14 @@
 
        
         <h3>Audio Example</h3>
-        <audio controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        <audio style="  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);" controls>
+            <source src="https://cdn.pixabay.com/audio/2022/10/01/audio_784b40f9f6.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
 
        
         <h3>Video Example</h3>
-        <video controls width="600">
+        <video style="max-height: 600px; max-width: 500px; border-radius: 6px; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);" controls width="600">
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
