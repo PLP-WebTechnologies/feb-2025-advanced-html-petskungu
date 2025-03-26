@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements and Forms</title>
+    <style>
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <h1>HTML5 Elements and Forms Example</h1>
+    </header>
+
+    
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I" style="display: block; text-align: left;">
+            <li>Introduction to HTML5</li>
+            <li>Semantic Elements</li>
+            <li>Forms and Input Types</li>
+            <li>Multimedia Integration</li>
+            <li>Advanced Features</li>
+        </ol>
+    </section>
+
+    
+    <section style="border: black; box-shadow: #333; box-sizing: border-box;">
+        <h2>Beautiful Nature Image</h2>
+        <img style="max-height: 600px; max-width: 500px;" src="https://images.pexels.com/photos/31187683/pexels-photo-31187683/free-photo-of-serene-hillside-landscape-with-soft-mist.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful landscape" width="600">
+    </section>
+
+   
+    <section>
+        <h2>Contact Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St, Springfield</td>
+                    <td>555-1234</td>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St, Rivertown</td>
+                    <td>555-5678</td>
+                    <td>janesmith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Robert Brown</td>
+                    <td>789 Pine St, Lakeside</td>
+                    <td>555-9876</td>
+                    <td>robertb@example.com</td>
+                </tr>
+                <tr>
+                    <td>Alice White</td>
+                    <td>101 Maple St, Mountainview</td>
+                    <td>555-2468</td>
+                    <td>alicewhite@example.com</td>
+                </tr>
+                <tr>
+                    <td>Charlie Green</td>
+                    <td>202 Birch St, Seaside</td>
+                    <td>555-1357</td>
+                    <td>charliegreen@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+   
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="subscribe">Subscribe to Newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Yes, I want to receive emails</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    
+    <section>
+        <h2>Multimedia Elements</h2>
+
+       
+        <h3>Audio Example</h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+       
+        <h3>Video Example</h3>
+        <video controls width="600">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+</body>
+</html>
